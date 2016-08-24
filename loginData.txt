@@ -1,0 +1,13 @@
+e12001 pass1 std 
+e12002 pass2 std 
+e12003 pass3 std   
+e12004 pass4 std  
+e12005 pass5 std  
+e12006 pass6 std  
+admin pass0 admin 
+staff1 stf1 stf 
+99x comp1 comp 
+DirectFN comp2 comp   
+Virtusa comp3 comp  
+SLT comp4 comp 
+Pravos comp5 comp 

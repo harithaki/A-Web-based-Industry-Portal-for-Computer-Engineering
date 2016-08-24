@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <head>
+<title>Test by YourName</title>
+<script>
+function togglecheckboxes(master,group){
+	var cbarray = document.getElementsByClassName(group);
+	for(var i = 0; i < cbarray.length; i++){
+		var cb = document.getElementById(cbarray[i].id);
+		cb.checked = master.checked;
+	}
+}
+</script>
+</head>
+<body>
+<!-- Your HTML code --> 
+
+
+<h2 style="color:blue"> Select which CVs you want to include in the zip-file</h2>
+<form action="download.php"" method="post">
+<input type="checkbox" id="cbgroup1_master" onchange="togglecheckboxes(this,'cbgroup1')"> Select All
+<br><br>
+<input type="checkbox" id="cb1_1" class="cbgroup1" name="items[]" value="e12005.pdf"> Item 1<br>
+<input type="checkbox" id="cb1_2" class="cbgroup1" name="items[]" value="e12040.pdf"> Item 2<br>
+<input type="checkbox" id="cb1_3" class="cbgroup1" name="items[]" value="e12012.pdf"> Item 3<br>
+<input type="checkbox" id="cb1_4" class="cbgroup1" name="items[]" value="e12026.pdf"> Item 4<br>
+<input type="checkbox" id="cb1_5" class="cbgroup1" name="items[]" value="e12223.pdf"> Item 5 <br>
+
+
+<input type="submit" name="formSubmit" value="Download as Zip" >
+
+</form>
+
+
+</body>
+</html>    
+

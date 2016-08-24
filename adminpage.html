@@ -1,0 +1,103 @@
+
+<html>
+
+    <head>
+	
+		<title> Admin Panel </title>
+	
+	<style>
+	 body {
+	background-image: url(images/img14.jpg);
+	padding-left:10px;
+	}
+		
+	  .left {
+				
+	position:absolute;
+	left:500px;
+	top:200px;
+	width:330px;
+	height:140px;
+	z-index:1;
+	}
+			
+	 
+		
+	
+
+    </style>
+	</head>
+	
+    <body>
+		
+      <form name="company" method="get" action="adminpage.php">
+
+	  
+      <div class="left">	  
+		<table>
+		
+		
+		<tr>
+			<td align=center><b>Company Details:<b></td>
+
+			<td><table>
+		    		<tr>
+					
+					<td align=center><b>Company Name: <b></td>
+					
+					<td>
+					
+						<input type="text" name="CompanyName" >
+						
+					</td>
+					
+					</tr>
+				
+				
+					
+					<td align=center><b>Address:<b></td>
+					<td>
+						<input type="text" name="Address">
+					</td>
+				</tr>
+
+		    		<tr>
+					<td align=center><b>Email:<b></td>
+					<td>
+						<input type="text" name="Email">
+					</td>
+				</tr>
+
+		    		<tr>
+					<td align=center><b>PhoneNo:<b></td>
+					<td>
+						<input type="text" name="Phone">
+					</td>
+				</tr>
+			</table></td></tr>
+	
+			<tr>
+				<td align=center><b>Message:<b></td>
+					<td>
+					<textarea name="comments" rows="17" cols="45"></textarea>
+			</tr>
+			<tr>
+				<td></td>
+	
+	   		 <td><input type="submit" value="Submit">
+			 </td>
+			
+			
+		</tr>
+
+	</table>
+	<h2> <a  href = "adminHome.php" style = "text-decoration:none">Back </h2></a>
+</div>
+		
+
+
+
+
+    </body>
+
+</html>

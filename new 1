@@ -1,0 +1,24 @@
+<?php
+       function preferens($compname){
+
+     
+		  
+		$query = mysql_query("SELECT company_name FROM ADMIN_ADD_COMPANY"); // Run your query
+
+		$out =" <select name=".$compname."> " ; // Open your drop down box
+
+		// Loop through the query results, outputing the options one by one
+		while ($row = mysql_fetch_array($query)) {
+			//echo <option>---Select Company-</option>
+		   $out .= '<option value="'.$row['company_name'].'">'.$row['company_name'].'</option>';
+		}
+
+		$out .= '</select>';
+		echo "$out";
+
+	}
+
+          
+            
+        
+    ?>

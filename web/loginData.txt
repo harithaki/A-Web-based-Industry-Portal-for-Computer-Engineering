@@ -1,0 +1,4 @@
+e12078 Hasra pass1 std 
+admin a pass2 admin 
+staff b pass3 stf 
+99x c pass4 comp 
